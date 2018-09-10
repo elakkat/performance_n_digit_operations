@@ -36,8 +36,7 @@ for i in range (0, len(N)):
         time_base=time_base+total_n;
     time_for_n_digit.append(time_base);
     
-print(time_for_n_digit)
 plt.plot(N, time_for_n_digit)
-    
-
-
+plt.xlabel('number of digits')
+plt.ylabel('time taken for execution')
+plt.title('Performance of division',fontsize=14, color='red')
